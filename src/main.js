@@ -8,7 +8,7 @@ let workerInit = ()=>{
         worker.postMessage("Hello World 2 Worker!!!!");
 
         worker.addEventListener('message', (e)=>{
-            console.log(e.data);
+            console.log(e.data, e);
         }, false);
     }catch(err){
         console.log(err);
